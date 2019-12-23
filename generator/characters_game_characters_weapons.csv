@@ -1,0 +1,61 @@
+name,strength,dexterity,intelligence,faith,type
+torch,0,0,0,0,sorcerer weapon
+faron flashsword,0,0,25,15,sorcerer upgrade
+aural decoy,0,0,22,0,sorcerer spell
+dragonscale armour,0,23,23,0,sorcerer armour
+magic shield,0,0,27,14,sorcerer shield
+crystal magic weapon,0,0,30,0,sorcerer upgrade+
+bellowing dragoncrest ring,0,0,30,15,sorcerer ring+
+soul greatsword,0,0,35,15,sorcerer spell
+homing crystal soulmass,0,0,40,0,sorcerer spell+
+crystal hail,0,25,35,0,sorcerer spell+
+Magic barrier,0,0,12,24,cleric spell
+Sacred oath,0,0,14,30,cleric spell
+Sunset shield,15,0,0,20,cleric shield
+Med heal,0,0,0,30,cleric spell
+Magic stoneplate ring,0,0,0,32,cleric ring+
+Cleric's candlestick,0,21,0,29,cleric weapon
+Atonement,25,0,0,25,cleric spell+
+Archdeacon robe,17,0,0,35,cleric armour+
+Great heal,0,0,0,40,cleric spell+
+Morne's great hammer,35,0,0,35,cleric weapon+
+Black hand armour,20,20,0,0,thief armour
+Shotel,0,29,26,0,thief weapon
+Obscuring ring,0,28,0,20,thief ring
+Small leather shield,15,30,0,15,thief shield
+Covetous silver serpent ring,0,31,27,0,thief ring
+Dragonrider bow,0,34,0,0,thief weapon+
+Man serpent hatchet,0,34,0,0,thief weapon+
+Covetous gold serpent ring,0,30,25,0,thief ring+
+Hawkwood's shield,23,33,0,23,thief shield+
+Royal dirk,0,31,0,31,thief weapon+
+Buckler,0,20,10,0,deprived shield
+Binoculars,0,0,20,20,deprived ring
+Brass armour,25,0,0,20,deprived armour
+Broken straight sword,20,20,0,0,deprived weapon
+Dung pie,0,0,0,0,deprived weapon
+Great club,35,0,0,0,deprived weapon+
+Painting Guardian Curved Sword,0,26,26,26,deprived weapon+
+Mirrah armour,27,0,0,27,deprived armour+
+Black knight shield,33,0,0,20,deprived shield+
+Carthus milkring,24,30,0,0,deprived ring+
+Ring of favour,0,21,0,21,mercenary ring
+Crest shield,16,22,0,0,mercenary shield
+Black leather armour,24,30,0,0,mercenary armour
+Crystal straight sword,0,30,21,0,mercenary weapon
+Warden twinblades,17,25,17,0,mercenary weapon
+Large leather shield,17,33,0,0,mercenary shield+
+Drang hammers,33,35,0,0,mercenary weapon+
+Onikiri and ubadachi,0,36,26,0,mercenary weapon+
+Wolf ring,25,35,25,0,mercenary ring+
+Eastern armour,0,36,26,0,mercenary armour+
+Cornyx's robes,21,0,21,0,pyromancer armour
+Great swamp ring,0,15,20,0,pyromancer ring
+Carthus flame arc,0,0,30,0,pyromancer spell+
+Immolation tinder,0,0,28,21,pyromancer weapon
+Great combustion,0,0,26,22,pyromancer spell
+Fire surge,22,0,26,0,pyromancer spell
+Rapport,0,0,36,0,pyromancer spell+
+Stone parma,15,0,35,0,pyromancer shield+
+Fire whip,0,0,34,18,pyromancer spell+
+Great chaos fireball,0,0,37,27,pyromancer spell+

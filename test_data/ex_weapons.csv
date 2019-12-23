@@ -1,0 +1,10 @@
+name,strength,dexterity,intelligence,faith,type,game
+antiquated robes,0,0,15,20,armour,base
+avelyn,0,30,23,0,weapon+,base
+black armour,0,20,20,0,armour,base
+blessed gem,0,0,0,25,gem,base
+cathedral knight armour,0,0,18,22,herald armour,base
+tiny being's ring,0,0,0,20,herald ring,base
+replenishment,0,0,0,25,herald spell,base
+golden wing crest shield,26,0,0,26,herald shield,base
+bountiful light,0,0,0,35,herald spell+,base

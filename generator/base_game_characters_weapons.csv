@@ -1,0 +1,41 @@
+name,strength,dexterity,intelligence,faith,type
+cathedral knight armour,0,0,18,22,herald armour
+tiny being's ring,0,0,0,20,herald ring
+replenishment,0,0,0,25,herald spell
+golden wing crest shield,26,0,0,26,herald shield
+bountiful light,0,0,0,35,herald spell+
+lothric's holy sword,27,0,0,31,herald weapon
+grass crest shield,28,0,0,28,herald weapon+
+bountiful sinlight,0,0,20,35,herald spell+
+saint bident,35,0,0,35,herald weapon+
+partizan,28,17,0,35,herald weapon+
+knight slayer's ring,30,0,0,0,warrior ring
+great wooden hammer,30,0,0,0,warrior weapon
+caestus,0,0,15,0,warrior weapon
+silver knight shield,31,23,0,0,warrior shield
+spiked mace,32,0,0,22,warrior weapon
+fallen knight armour,30,0,22,0,warrior armour+
+balder side sword,33,23,0,0,warrior weapon+
+great machete,40,35,0,0,warrior weapon+
+warpick,35,25,0,0,warrior weapon+
+dragonslayer's axe,35,15,15,15,warrior weapon+
+lothric knight armour,21,0,0,15,knight armour
+spider shield,27,0,15,0,knight shield
+elite knight armour,35,0,0,15,knight armour+
+faraam armour,29,0,19,0,knight armour+
+broadsword,30,28,0,0,knight weapon
+black iron greatshield,27,37,17,0,knight shield+
+twin dragon greatshield,35,35,15,15,knight shield+
+sun priest ring,30,0,0,25,knight ring
+blue tearstone ring,0,25,0,25,knight ring
+falchion,37,30,0,23,knight weapon+
+hornet ring,0,30,0,0,assassin ring
+composite bow,15,21,0,0,assassin weapon
+rotten ghru dagger,0,17,17,0,assassin weapon
+spotted whip,0,30,23,0,assassin weapon
+elkhorn round shield,16,34,16,0,assassin shield+
+shadow armour,0,34,0,17,assassin armour
+alva armour,24,38,24,0,assassin armour+
+carthus curved sword,0,35,25,0,assassin weapon+
+umbral dagger,0,35,35,0,assassin weapon+
+lucerne,0,31,31,0,assassin weapon+

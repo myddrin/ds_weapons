@@ -1,0 +1,96 @@
+{
+  "characters": [
+    {
+      "name": "herald",
+      "stats": [
+        [12, 11, 8, 13],
+        [19, 17, 12, 22],
+        [28, 26, 20, 31],
+        [37, 34, 29, 40],
+        [40, 40, 40, 40]
+      ]
+    },
+    {
+      "name": "warrior",
+      "stats": [
+        [16, 9, 8, 9],
+        [23, 16, 15, 16],
+        [32, 25, 25, 25],
+        [40, 35, 30, 35],
+        [40, 40, 40, 40]
+      ]
+    },
+    {
+      "name": "knight",
+      "stats": [
+        [13, 12, 9, 9],
+        [21, 19, 15, 15],
+        [30, 29, 23, 23],
+        [40, 38, 31, 31],
+        [40, 40, 40, 40]
+      ]
+    },
+    {
+      "name": "assassin",
+      "stats": [
+        [10, 14, 11, 9],
+        [16, 22, 18, 14],
+        [25, 31, 27, 22],
+        [34, 40, 36, 30],
+        [40, 40, 40, 40]
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "cathedral knight armour",
+      "type": "armour",
+      "character": "herald",
+      "stats": [0, 0, 18, 22]
+    },
+    {
+      "name": "tiny being's ring",
+      "type": "ring",
+      "character": "herald",
+      "stats": [0, 0, 0, 20]
+    },
+    {
+      "name": "replenishment",
+      "type": "spell",
+      "character": "herald",
+      "stats": [0, 0, 0, 25]
+    },
+    {
+      "name": "golden wing crest shield",
+      "type": "shield",
+      "character": "herald",
+      "stats": [26, 0, 0, 26]
+    },
+    {
+      "name": "bountiful light",
+      "type": "spell+",
+      "character": "herald",
+      "stats": [0, 0, 0, 35]
+    },
+    {
+      "name": "antiquated robes",
+      "type": "armour",
+      "stats": [0, 0, 15, 20]
+    },
+    {
+      "name": "avelyn",
+      "type": "weapon+",
+      "stats": [0, 30, 23, 0]
+    },
+    {
+      "name": "black armour",
+      "type": "armour",
+      "stats": [0, 20, 20, 0]
+    },
+    {
+      "name": "blessed gem",
+      "type": "gem",
+      "stats": [0, 0, 0, 25]
+    }
+  ]
+}

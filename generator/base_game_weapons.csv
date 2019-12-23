@@ -1,0 +1,67 @@
+name,strength,dexterity,intelligence,faith,type
+antiquated robes,0,0,15,20,armour
+avelyn,0,30,23,0,weapon+
+black armour,0,20,20,0,armour
+blessed gem,0,0,0,25,upgrade
+blood gem,15,0,0,0,upgrade
+brigand axe,19,0,16,0,weapon
+chloranthy ring,18,18,18,18,ring
+claymore,30,26,0,0,weapon
+court sorcerer robes,0,17,22,0,armour
+crystal gem,0,0,25,0,upgrade
+deacon robes,0,0,0,24,armour
+dragon crest shield,21,0,0,21,shield
+dragon tooth,37,0,0,25,weapon+
+drake sword,27,17,17,0,weapon+
+drang armour,18,14,0,0,armour
+eastern iron shield,0,28,0,0,shield
+effigy shield,10,0,0,10,shield
+exile armour,26,0,0,16,armour
+fireball,0,0,23,0,spell
+firebombs,0,0,15,15,spell
+firelink armour,20,0,15,0,armour
+force,0,0,12,0,spell
+fume ultra greatsword,37,33,0,0,weapon+
+gotthard twinswords,25,35,0,0,weapon+
+great mace,21,0,0,28,weapon
+great magic weapon,0,0,12,12,spell
+greataxe,32,22,0,0,weapon
+halberd,18,0,0,31,weapon
+hard leather armour,26,26,26,0,armour
+heal,0,0,0,23,spell
+heal aid,0,0,0,13,spell
+heavy gem,25,0,0,0,upgrade
+kukris,0,15,0,0,weapon
+lightning gem,0,0,15,0,upgrade
+longbow,0,18,0,0,weapon
+master's attire,0,30,18,0,armour
+moonlight greatsword,21,21,31,0,weapon+
+morning star,16,0,0,19,weapon
+murakumo,0,27,17,0,weapon
+pierce shield,16,10,0,0,shield
+poison gem,0,15,0,0,upgrade
+poison mist,0,11,16,0,spell
+rapier,0,21,21,0,weapon
+reinforced club,23,0,0,16,weapon
+santier's spear,20,30,0,0,weapon+
+scimitar,0,20,18,0,weapon
+sharp gem,0,25,0,0,upgrade
+shortsword,15,23,0,0,weapon
+silver eagle kite shield,15,0,0,0,shield
+silver knight straight sword,20,20,20,20,weapon
+simple gem,0,0,0,15,upgrade
+sorcerer's staff,15,0,30,0,weapon
+soul arrow,0,0,16,0,spell
+soulstream,0,0,22,0,spell
+sunless armour,13,0,0,13,armour
+sunlight straight sword,15,15,0,30,weapon+
+sunset armour,20,0,0,24,armour
+thrall axe,16,16,0,0,weapon
+titanite shard,0,0,0,0,upgrade
+titanite shard,0,0,0,0,upgrade
+titanite shard,0,0,0,0,upgrade
+titatine shard,0,0,0,0,upgrade
+washing pole,0,37,0,21,weapon+
+winged spear,20,0,0,22,weapon
+worker armour,12,12,12,12,armour
+zweihander,35,25,0,0,weapon
