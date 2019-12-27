@@ -2,7 +2,7 @@ name,strength,dexterity,intelligence,faith,type,game
 antiquated robes,0,0,15,20,armour,base
 avelyn,0,30,23,0,weapon+,base
 black armour,0,20,20,0,armour,base
-blessed gem,0,0,0,25,gem,base
+blessed gem,0,0,0,25,upgrade,base
 cathedral knight armour,0,0,18,22,herald armour,base
 tiny being's ring,0,0,0,20,herald ring,base
 replenishment,0,0,0,25,herald spell,base

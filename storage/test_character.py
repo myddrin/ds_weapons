@@ -1,17 +1,17 @@
-from storage.objects import Game, GameConfig
+from storage.objects import Deck, GameConfig
 
 
 class TestCharacter:
 
     def test_herald_souls_per_weapon(self):
         cfg = GameConfig.normal_game()
-        game = Game.from_json_file('ex_base_game.json')
+        game = Deck.from_json_file('../test_data/ex_base_game.json')
 
-        herald = game.get_character('herald')
+        herald = game.characters.get('herald')
 
         weapon_cost = {
-            w.name: herald.need_souls(w, cfg)
-            for w in game.weapons
+            n: herald.need_souls(w, cfg)
+            for n, w in game.weapons.items()
         }
         assert weapon_cost == {
             'cathedral knight armour': 8,
@@ -27,13 +27,13 @@ class TestCharacter:
 
     def test_warrior_souls_per_weapon(self):
         cfg = GameConfig.normal_game()
-        game = Game.from_json_file('ex_base_game.json')
+        game = Deck.from_json_file('../test_data/ex_base_game.json')
 
-        warrior = game.get_character('warrior')
+        warrior = game.characters.get('warrior')
 
         weapon_cost = {
-            w.name: warrior.need_souls(w, cfg)
-            for w in game.weapons
+            n: warrior.need_souls(w, cfg)
+            for n, w in game.weapons.items()
         }
         assert weapon_cost == {
             'cathedral knight armour': None,

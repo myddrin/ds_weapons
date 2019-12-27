@@ -1,5 +1,6 @@
 import json
 from enum import Enum
+from operator import attrgetter
 from typing import List, Optional, Dict
 
 import attr
@@ -105,7 +106,7 @@ class Weapon(JsonObject):
         return f'{self.name} - {self.type.value}{character}: {self.stats}'
 
     @classmethod
-    def from_json(cls, obj: Dict, characters: List["Character"] = None) -> 'Weapon':
+    def from_json(cls, obj: Dict, characters: Dict[str, "Character"] = None) -> "Weapon":
         w_type = obj.pop('type')
         if w_type[-1] == '+':
             # TODO(tr) count number of + to get the level
@@ -118,12 +119,9 @@ class Weapon(JsonObject):
         character_name = obj.pop('character', None)
         character = None
         if character_name:
-            for c in characters:
-                if c.name == character_name:
-                    character = c
-                    break
-            else:
+            if character_name not in characters:
                 raise RuntimeError(f'Did not find character {character_name} when loading {obj}')
+            character = characters[character_name]
 
         return cls(type=e_type, stats=stats, level=level, character=character, **obj)
 
@@ -184,41 +182,32 @@ class Character(JsonObject):
 
 
 @attr.s
-class Game(JsonObject):
-    characters: List[Character] = attr.ib(default=attr.Factory(list))
-    weapons: List[Weapon] = attr.ib(default=attr.Factory(list))
+class Deck(JsonObject):
+    characters: Dict[str, Character] = attr.ib(default=attr.Factory(dict))
+    weapons: Dict[str, Weapon] = attr.ib(default=attr.Factory(dict))
 
-    def get_character(self, name: str) -> Character:
-        for c in self.characters:
-            if c.name == name:
-                return c
+    def get_character(self, index: int, sort_by:str = 'name') -> Character:
+        w = sorted(self.characters.values(), key=attrgetter(sort_by))
+        return w[index]
+
+    def get_weapon(self, index: int, sort_by:str = 'name') -> Weapon:
+        w = sorted(self.weapons.values(), key=attrgetter(sort_by))
+        return w[index]
 
     def extend_from_file(self, filename: str):
         with open(filename) as f:
             obj = json.load(f)
-            self.characters.extend([
-                Character.from_json(c)
-                for c in obj['characters']
-            ])
-            self.weapons.extend([
-                Weapon.from_json(w, self.characters)
-                for w in obj['weapons']
-            ])
+            for c in obj['characters']:
+                character = Character.from_json(c)
+                if character.name not in self.characters:
+                    self.characters[character.name] = character
+
+            for w in obj['weapons']:
+                weapon = Weapon.from_json(w, self.characters)
+                self.weapons[weapon.name] = weapon
 
     @classmethod
-    def from_json(cls, obj: Dict, **kwargs) -> 'Game':
-        characters = [
-            Character.from_json(c)
-            for c in obj.pop('characters')
-        ]
-        weapons = [
-            Weapon.from_json(w, characters)
-            for w in obj.pop('weapons')
-        ]
-        return cls(characters=characters, weapons=weapons)
-
-    @classmethod
-    def from_json_file(cls, filename: str) -> 'Game':
+    def from_json_file(cls, filename: str) -> 'Deck':
         obj = cls()
         obj.extend_from_file(filename)
         return obj
@@ -227,10 +216,10 @@ class Game(JsonObject):
         return {
             'characters': [
                 c.to_json()
-                for c in self.characters
+                for c in self.characters.values()
             ],
             'weapons': [
                 w.to_json()
-                for w in self.weapons
+                for w in self.weapons.values()
             ]
         }

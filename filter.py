@@ -1,6 +1,6 @@
 import math
 
-from storage.objects import Game, GameConfig
+from storage.objects import Deck, GameConfig
 
 if __name__ == '__main__':
     import argparse
@@ -33,16 +33,16 @@ if __name__ == '__main__':
     else:
         cfg = GameConfig.normal_game()
 
-    game = Game.from_json_file('base_game.json')
+    game = Deck.from_json_file('base_game.json')
     for g in args.game:
         game.extend_from_file(f'{g}_game.json')
 
     print(f'Loaded {len(game.characters)} characters and {len(game.weapons)} weapons')
 
     souls_per_room = cfg.souls_per_room(args.players)
-    for weapon in game.weapons:
+    for weapon in game.weapons.values():
         souls_cost = {}
-        for character in game.characters:
+        for character in game.characters.values():
             v = character.need_souls(weapon, cfg)
             if v:
                 souls_cost[character.name] = math.ceil(v / souls_per_room)

@@ -1,20 +1,20 @@
 import json
 
 from generator.load_data import load_csv
-from storage.objects import Game
+from storage.objects import Deck
 
 
 def test_load_data():
     with open('../test_data/ex_base_game.json') as f:
         init_json = json.load(f)
-    game = Game.from_json_file('../test_data/ex_base_game.json')
+    game = Deck.from_json_file('../test_data/ex_base_game.json')
 
     new_json = game.to_json()
     assert new_json == init_json
 
 
 def test_load_csv():
-    game = Game.from_json_file('../base_game_characters.json')
+    game = Deck.from_json_file('base_game_characters_only.json')
     load_csv(game, '../test_data/ex_weapons.csv')
     with open('../test_data/ex_base_game.json') as f:
         init_json = json.load(f)

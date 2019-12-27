@@ -1,10 +1,10 @@
 import csv
 import json
 
-from storage.objects import Game, Weapon
+from storage.objects import Deck, Weapon
 
 
-def load_csv(game: Game, filename: str):
+def load_csv(game: Deck, filename: str):
     with open(filename) as csv_file:
         reader = csv.DictReader(csv_file)
         for weapon in reader:
@@ -28,13 +28,14 @@ def load_csv(game: Game, filename: str):
                 'type': e_type,
                 'character': character,
             }
-            game.weapons.append(Weapon.from_json(obj, game.characters))
+            w = Weapon.from_json(obj, game.characters)
+            game.weapons[w.name] = w
 
 
 def generate_file(filename: str, input_characters: str, *args):
     print('----')
     print(f'Loading {input_characters}')
-    game = Game.from_json_file(input_characters)
+    game = Deck.from_json_file(input_characters)
 
     for input_weapons in args:
         print(f'Loading {input_weapons}')
