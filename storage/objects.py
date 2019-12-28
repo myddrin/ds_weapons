@@ -45,6 +45,13 @@ class JsonObject:
 
 @attr.s
 class Stats(JsonObject):
+    titles = (
+        'Str.',
+        'Dex.',
+        'Int.',
+        'Fai.',
+    )
+
     strength: int = attr.ib()
     dexterity: int = attr.ib()
     intelligence: int = attr.ib()
